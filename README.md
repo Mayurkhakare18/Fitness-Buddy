@@ -132,7 +132,7 @@ ibmcloud cf push fitness-buddy
 ibmcloud cf apps
 ```
 
-App will be live at: `https://fitness-buddy.YOUR-ORG.us-south.cf.appdomain.cloud`
+App will be live at: `https://fitness-buddy-2nl7.onrender.com'
 
 ---
 
