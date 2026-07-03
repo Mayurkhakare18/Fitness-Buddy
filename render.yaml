@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: fitness-buddy
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    envVars:
+      - key: WATSONX_API_KEY
+        sync: false
+      - key: WATSONX_PROJECT_ID
+        sync: false
+      - key: WATSONX_URL
+        value: https://au-syd.ml.cloud.ibm.com
+      - key: GRANITE_MODEL_ID
+        value: ibm/granite-13b-instruct-v2
+      - key: SECRET_KEY
+        generateValue: true
+      - key: FLASK_DEBUG
+        value: false
