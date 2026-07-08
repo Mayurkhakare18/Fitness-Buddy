@@ -216,15 +216,7 @@ Change model in `.env`: `GRANITE_MODEL_ID=ibm/granite-3-8b-instruct`
 
 > **Note:** For production use, upgrade to IBM Cloud Pay-As-You-Go for more tokens and resources.
 
----
 
-## 🩺 Demo Mode (No API Key)
-
-The app works **without** an API key in "Demo Mode":
-- Pre-built responses for common fitness questions
-- All calculators (BMI, calories) work fully
-- UI features (progress, family profiles) work fully
-- Only real-time AI chat is limited
 
 ---
 
